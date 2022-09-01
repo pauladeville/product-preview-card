@@ -89,6 +89,7 @@ a:hover{
         border-radius: 8px 0px 0px 8px;
         flex: 1;
         height: auto;
+        background-image: url(images/image-product-desktop.jpg);
     }
     .card-text{
         flex: 1;
