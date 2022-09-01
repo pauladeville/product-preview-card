@@ -10,45 +10,50 @@ body{
     margin: 15% auto;
     border-radius: 8px;
 }
-img{
-    width: 100%;
+.card-img{
+    height: 250px;
     border-radius: 8px 8px 0px 0px ;
+    background-image: url(images/image-product-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+
 }
 h2{
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 5px;
-    color:hsl(228, 12%, 48%)
+    color:hsl(228, 12%, 48%);
+    margin-top: 18px;
 }
 h1{
     margin: 0 0 15px 0;
     font-family: 'Fraunces', serif;
-    font-size: 32px;
+    font-size: 33px;
 }
 p{
     color: hsl(228, 12%, 48%);
     line-height: 24px;
 }
-.card-text{
+.card-text-inner{
     padding: 10px 28px 28px 28px;
 }
 .price{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 30px 0 25px;
+    margin: 35px 0 30px;
 }
 .price-promo{
     font-family: 'Fraunces', serif;
-    font-size: 32px;
+    font-size: 33px;
     color: hsl(158, 36%, 37%);
     margin: 0 20px 0 0;
 }
 .price-before{
     margin: 0;
 }
-button{
+a{
     background-color: hsl(158, 36%, 37%);
     border: 0;
     display: flex;
@@ -56,14 +61,36 @@ button{
     border-radius: 7px;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    padding: 4px 0;
+    transition: background-color 400ms;
 }
-button img {
+a img {
     width: 15px;
 }
-button p{
+a p{
     font-weight: 700;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 12px;
+}
+a:hover{
+    background-color: hsl(157, 48%, 15%);
+}
+
+@media screen and (min-width:900px) {
+    .card{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+    .card-img{
+        border-radius: 8px 0px 0px 8px;
+        flex: 1;
+        height: auto;
+    }
+    .card-text{
+        flex: 1;
+    }
 }
